@@ -1,0 +1,7 @@
+    
+        /*var marcador= new Marker(map, markerOptions);
+        marcador.setPosition(myPosition);
+        marcador.setVisible(true);
+        var info= new HtmlInfoWindow();
+        info.setContent("<h1>HOLA</h1>");
+        info.open(marcador);*/
