@@ -7,23 +7,17 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-geolocation": {
-            "PACKAGE_NAME": "io.ionic.starter"
-        },
         "cordova-plugin-googlemaps": {
-            "API_KEY_FOR_ANDROID": "AIzaSyCoAoqs2uXxSJkJcIHA9Kd5NpLnkxS_tw0",
-            "PACKAGE_NAME": "io.ionic.starter"
-        },
-        "cordova-plugin-console": {
+            "API_KEY_FOR_ANDROID": "AIzaSyDjixREIkGZoROadlioScipYM4sNqCKLnM",
             "PACKAGE_NAME": "io.ionic.starter"
         },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "io.ionic.starter"
         },
-        "cordova-plugin-splashscreen": {
+        "cordova-plugin-ionic-webview": {
             "PACKAGE_NAME": "io.ionic.starter"
         },
-        "cordova-plugin-statusbar": {
+        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "io.ionic.starter"
         },
         "cordova-plugin-whitelist": {
@@ -31,14 +25,7 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "io.ionic.starter"
-        },
-        "cordova-plugin-flashlight": {
-            "PACKAGE_NAME": "io.ionic.starter"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "io.ionic.starter"
-        }
-    }
+    "dependent_plugins": {}
 }

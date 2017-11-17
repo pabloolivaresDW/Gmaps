@@ -1,40 +1,24 @@
 {
-    "cordova-plugin-geolocation": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-geolocation@^2.4.3"
-        },
-        "is_top_level": true,
-        "variables": {
-            "GEOLOCATION_USAGE_DESCRIPTION": "Necesitamos saber tu ubicacion 1313"
-        }
-    },
     "cordova-plugin-googlemaps": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-googlemaps@^1.4.5"
+            "id": "cordova-plugin-googlemaps"
         },
         "is_top_level": true,
         "variables": {
-            "API_KEY_FOR_ANDROID": "AIzaSyDAPYwu_nghok4DFQ3hb0H0Z38kIcuZkyo",
-            "API_KEY_FOR_IOS": "AIzaSyDAPYwu_nghok4DFQ3hb0H0Z38kIcuZkyo"
+            "API_KEY_FOR_ANDROID": "AIzaSyDjixREIkGZoROadlioScipYM4sNqCKLnM",
+            "API_KEY_FOR_IOS": "AIzaSyDQRzXMgamLrIFMZ_nkCHs8T8DMHNE74r4"
         }
     },
-    "cordova-plugin-compat": {
+    "cordova-plugin-geolocation": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-compat@^1.0.0"
-        },
-        "is_top_level": false,
-        "variables": {}
-    },
-    "cordova-plugin-console": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-console@1.0.5"
+            "id": "cordova-plugin-geolocation@3.0.0"
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "GEOLOCATION_USAGE_DESCRIPTION": "Necesitamos tu ubicacion"
+        }
     },
     "cordova-plugin-device": {
         "source": {
@@ -44,18 +28,18 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-splashscreen": {
+    "cordova-plugin-ionic-webview": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-splashscreen@~4.0.1"
+            "id": "cordova-plugin-ionic-webview@^1.1.11"
         },
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-statusbar": {
+    "cordova-plugin-splashscreen": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-statusbar@2.2.2"
+            "id": "cordova-plugin-splashscreen@~4.0.1"
         },
         "is_top_level": true,
         "variables": {}
@@ -74,22 +58,6 @@
             "id": "ionic-plugin-keyboard@~2.2.1"
         },
         "is_top_level": true,
-        "variables": {}
-    },
-    "cordova-plugin-flashlight": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-flashlight"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "com.googlemaps.ios": {
-        "source": {
-            "type": "registry",
-            "id": "https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk"
-        },
-        "is_top_level": false,
         "variables": {}
     }
 }
