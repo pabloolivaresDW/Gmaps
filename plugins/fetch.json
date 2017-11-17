@@ -1,15 +1,4 @@
 {
-    "cordova-plugin-googlemaps": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-googlemaps"
-        },
-        "is_top_level": true,
-        "variables": {
-            "API_KEY_FOR_ANDROID": "AIzaSyDjixREIkGZoROadlioScipYM4sNqCKLnM",
-            "API_KEY_FOR_IOS": "AIzaSyDQRzXMgamLrIFMZ_nkCHs8T8DMHNE74r4"
-        }
-    },
     "cordova-plugin-geolocation": {
         "source": {
             "type": "registry",
@@ -17,7 +6,7 @@
         },
         "is_top_level": true,
         "variables": {
-            "GEOLOCATION_USAGE_DESCRIPTION": "Necesitamos tu ubicacion"
+            "GEOLOCATION_USAGE_DESCRIPTION": "Necesitamos saber tu ubicacion"
         }
     },
     "cordova-plugin-device": {
@@ -59,5 +48,16 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-googlemaps": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-googlemaps@1.4.5"
+        },
+        "is_top_level": true,
+        "variables": {
+            "API_KEY_FOR_ANDROID": "AIzaSyDjixREIkGZoROadlioScipYM4sNqCKLnM",
+            "API_KEY_FOR_IOS": "AIzaSyDQRzXMgamLrIFMZ_nkCHs8T8DMHNE74r4"
+        }
     }
 }

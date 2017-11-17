@@ -1,8 +1,8 @@
 //
 //  MyPluginScrollView.h
-//  cordova-googlemaps-plugin v2
+//  DevApp
 //
-//  Created by Masashi Katsumata.
+//  Created by masashi on 9/22/14.
 //
 //
 
@@ -10,8 +10,7 @@
 #import "MyPluginLayerDebugView.h"
 
 @interface MyPluginScrollView : UIScrollView
-
 @property (nonatomic) MyPluginLayerDebugView *debugView;
-
 - (void)attachView:(UIView *)view;
+- (void)dettachView;
 @end

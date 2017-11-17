@@ -1,8 +1,8 @@
 //
 //  MyPluginScrollView.m
-//  cordova-googlemaps-plugin v2
+//  DevApp
 //
-//  Created by Masashi Katsumata.
+//  Created by masashi on 9/22/14.
 //
 //
 
@@ -10,18 +10,22 @@
 
 @implementation MyPluginScrollView
 
+UIView *myView = nil;
 
 -  (id)initWithFrame:(CGRect)aRect
 {
   self = [super initWithFrame:aRect];
-  self.debugView = [[MyPluginLayerDebugView alloc] initWithFrame:CGRectMake(0, 0, aRect.size.width, 5000)];
-  
+  self.debugView = [[MyPluginLayerDebugView alloc] initWithFrame:aRect];
   return self;
 }
 
 - (void)attachView:(UIView *)view {
-  [self.debugView removeFromSuperview];
+  myView = view;
   [self addSubview:view];
   [self addSubview:self.debugView];
+}
+- (void)dettachView {
+  [myView removeFromSuperview];
+  [self.debugView removeFromSuperview];
 }
 @end

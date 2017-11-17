@@ -7,10 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-googlemaps": {
-            "API_KEY_FOR_ANDROID": "AIzaSyDjixREIkGZoROadlioScipYM4sNqCKLnM",
-            "PACKAGE_NAME": "io.ionic.starter"
-        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "io.ionic.starter"
         },
@@ -24,6 +20,10 @@
             "PACKAGE_NAME": "io.ionic.starter"
         },
         "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-googlemaps": {
+            "API_KEY_FOR_ANDROID": "AIzaSyDjixREIkGZoROadlioScipYM4sNqCKLnM",
             "PACKAGE_NAME": "io.ionic.starter"
         }
     },

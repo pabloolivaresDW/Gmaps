@@ -25678,8 +25678,8 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-page-about #map {
+page-home #map {
   display: block;
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
 }
