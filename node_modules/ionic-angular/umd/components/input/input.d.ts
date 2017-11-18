@@ -117,11 +117,11 @@ export declare class TextInput extends BaseInput<string> implements IonicFormInp
      */
     _native: ElementRef;
     /**
-     * @input {string} Instructional text that shows before the input has a value.
+     * @input {string} Set the input's autocomplete property. Values: `"on"`, `"off"`. Default `"off"`.
      */
     autocomplete: string;
     /**
-     * @input {string} Instructional text that shows before the input has a value.
+     * @input {string} Set the input's autocorrect property. Values: `"on"`, `"off"`. Default `"off"`.
      */
     autocorrect: string;
     /**
@@ -207,7 +207,7 @@ export declare class TextInput extends BaseInput<string> implements IonicFormInp
     _relocateInput(shouldRelocate: boolean): void;
     _enableScrollPadding(): void;
     _enableHideCaretOnScroll(): void;
-    _enableResizeAssist(): void;
+    _enableScrollMove(): void;
     _pointerStart(ev: UIEvent): void;
     _pointerEnd(ev: UIEvent): void;
     _jsSetFocus(): void;

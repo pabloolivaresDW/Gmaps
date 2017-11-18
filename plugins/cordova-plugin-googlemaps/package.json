@@ -1,19 +1,19 @@
 {
-  "_from": "cordova-plugin-googlemaps",
+  "_from": "cordova-plugin-googlemaps@1.4.5",
   "_id": "cordova-plugin-googlemaps@1.4.5",
   "_inBundle": false,
   "_integrity": "sha1-+p6j4p05SS7PgNLDgR5A4Lx+S3g=",
   "_location": "/cordova-plugin-googlemaps",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "cordova-plugin-googlemaps",
+    "raw": "cordova-plugin-googlemaps@1.4.5",
     "name": "cordova-plugin-googlemaps",
     "escapedName": "cordova-plugin-googlemaps",
-    "rawSpec": "",
+    "rawSpec": "1.4.5",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "1.4.5"
   },
   "_requiredBy": [
     "#USER",
@@ -21,8 +21,8 @@
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-googlemaps/-/cordova-plugin-googlemaps-1.4.5.tgz",
   "_shasum": "fa9ea3e29d39492ecf80d2c3811e40e0bc7e4b78",
-  "_spec": "cordova-plugin-googlemaps",
-  "_where": "/Users/pabloolivaresl./localizacion/node_modules",
+  "_spec": "cordova-plugin-googlemaps@1.4.5",
+  "_where": "/Users/pabloolivaresl./testTabsMaps/testTabsMaps/node_modules",
   "author": {
     "name": "Masashi Katsumata, Hirbod Mirjavadi"
   },

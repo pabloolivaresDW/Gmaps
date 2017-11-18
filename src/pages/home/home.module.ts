@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-//import { HomePage } from './home';
+import { HomePage } from './home';
+import { GoogleMaps } from '@ionic-native/google-maps';
+import { Geolocation } from '@ionic-native/geolocation';
+
 
 @NgModule({
   declarations: [
@@ -9,5 +12,6 @@ import { IonicPageModule } from 'ionic-angular';
   imports: [
     IonicPageModule.forChild(HomePage),
   ],
+  providers:[GoogleMaps, Geolocation]
 })
-export class HomePage {}
+export class HomePageModule {}

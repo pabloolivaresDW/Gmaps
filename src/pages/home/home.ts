@@ -5,12 +5,14 @@ import {
   GoogleMapOptions,
   CameraPosition,
   MarkerOptions,
-  Marker
+  Marker,
+  HtmlInfoWindow
  } from '@ionic-native/google-maps';
  import { Component } from "@angular/core/";
- import { NavController } from 'ionic-angular';
+ import { IonicPage, NavController } from 'ionic-angular';
  import { Geolocation, Geoposition } from '@ionic-native/geolocation';
 
+ @IonicPage()
  @Component({
    selector: 'page-home',
    templateUrl: 'home.html'
@@ -18,7 +20,7 @@ import {
  export class HomePage {
    map: GoogleMap;
    mapElement: HTMLElement;
-   constructor(private googleMaps: GoogleMaps, public navCtrl: NavController,
+   constructor(public googleMaps: GoogleMaps, public navCtrl: NavController,
     public geolocation: Geolocation) { }
  
    ionViewDidLoad() {
@@ -26,7 +28,8 @@ import {
    }
  
    obtenerPosicion():any{
-    this.geolocation.getCurrentPosition({enableHighAccuracy: true, timeout: 20000, maximumAge: 10000}).then(response => {
+     console.log("Obteniendo");
+    this.geolocation.getCurrentPosition({enableHighAccuracy: true, timeout:15000, maximumAge: 10000}).then(response => {
       this.loadMap(response);
     })
 
@@ -216,7 +219,11 @@ import {
     };
  
      this.map = this.googleMaps.create(this.mapElement, mapOptions);
- 
+
+     var estudio='www/assets/imgs/facultad.png';
+
+     alert (estudio);
+
      // Wait the MAP_READY before using any methods.
      this.map.one(GoogleMapsEvent.MAP_READY)
        .then(() => {
@@ -224,7 +231,9 @@ import {
          let ingenieria;
          ingenieria=this.map.addMarker({
              title:'facultad de ingenieria',
-             icon:'red',
+             icon:{
+                url : estudio
+                },
              position:{
                  lat:-33.0458713,
                  lng:-71.6136807
@@ -232,24 +241,34 @@ import {
          });
 
          let FACEA;
-         ingenieria=this.map.addMarker({
-            title:'Texto de ejemplo 1....',
-            icon:'green',
+         FACEA=this.map.addMarker({
+            title:'FACEA',
+            icon:{
+                url : estudio
+                },
             position:{
                 lat:-33.043834,
                 lng:-71.616929
             }
         });
-
-         // Now you can use all methods safely.
+    
+        // Now you can use all methods safely.
          this.map.addMarker({
-             title: 'Ionic',
-             icon: 'blue',
+             title:"hola", //'Estás aquí',
+             icon: {url:'www/assets/imgs/ubicacion.png'},
              animation: 'DROP',
              position: {
                lat: latitude,
                lng: longitud
-             }
+             },
+             styles: {
+                'text-align': 'center',
+                'font-style': 'italic',
+                'font-weight': 'bold',
+                'color': 'red',
+                'background':'red',
+                'background-image': 'url(http://www.html5canvastutorials.com/demos/assets/darth-vader.jpg)'
+              }
            })
            .then(marker => {
              marker.on(GoogleMapsEvent.MARKER_CLICK)
